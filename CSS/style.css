@@ -1,0 +1,127 @@
+:root {
+  --coloor-text: #13183f;
+  --color-main: #fff;
+  --color-text-lead: #83869a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+img,
+video,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* mobile style  */
+
+body {
+  line-height: 1.5;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* main style */
+.btn {
+  border: none;
+  padding: 1em 1.5em;
+  color: var(--color-main);
+}
+.btn-header {
+  background-color: var(--coloor-text);
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 28px;
+  margin-top: 1.93rem;
+}
+.btn-hero {
+  background: linear-gradient(#f02aa6, #ff6f48);
+  border-radius: 31.5px;
+  padding: 0.93em 2.31em;
+}
+
+/* mobile-first design */
+.container {
+  max-width: 378px;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-logo {
+  height: 2.1875rem;
+}
+.info-hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--coloor-text);
+}
+.hero-lead {
+  color: var(--color-text-lead);
+  font-weight: 500;
+  font-size: 1.3rem;
+  max-width: 400px;
+  margin: 33px 0;
+}
+/* for large phone */
+@media (min-width: 400px) {
+  .main {
+    background-color: red;
+  }
+}
+
+/* for tablet */
+@media (min-width: 768px) {
+  .main {
+    background-color: brown;
+  }
+}
+/* for small laptop */
+@media (min-width: 1024px) {
+  .main {
+    background-color: darkgoldenrod;
+  }
+}
+/* for normal desktop */
+@media (min-width: 1300px) {
+  .main {
+    background-color: yellowgreen;
+  }
+}
