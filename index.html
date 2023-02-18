@@ -8,9 +8,10 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      href="./assest/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,29 +31,43 @@
         <button class="btn btn-header">Get Started</button>
       </div>
     </header>
-    <div class="main">
-      <div class="hero container">
-        <div class="info-hero">
-          <h1 class="hero-title">Maximize skill, minimize budget</h1>
-          <p class="hero-lead">
-            Our modern courses across a range of in-demand skills will give you
-            the knowledge you need to live the life you want.
-          </p>
-          <button class="btn btn-hero">Get Started</button>
+    <main>
+      <section class="hero">
+        <div class="hero-inner container">
+          <div class="info-hero">
+            <h1 class="hero-title">Maximize skill, minimize budget</h1>
+            <p class="hero-lead">
+              Our modern courses across a range of in-demand skills will give
+              you the knowledge you need to live the life you want.
+            </p>
+            <button class="btn btn-hero">Get Started</button>
+          </div>
+          <div class="img-hero">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./assest/image-hero-desktop.png,
+                  ./assest/image-hero-desktop@2x.png
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./assest/image-hero-tablet.png,
+                  ./assest/image-hero-tablet@2x.png
+                "
+              />
+
+              <img
+                src="./assest/image-hero-mobile.png"
+                class="image-hero"
+                alt=""
+              />
+            </picture>
+          </div>
         </div>
-        <div class="img-hero"></div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
-
-<!--    Check out our most popular courses! Animation
-    Learn the latest animation techniques to create stunning motion design and
-    captivate your audience. Get Started Design Create beautiful, usable
-    interfaces to help shape the future of how the web looks. Get Started
-    Photography Explore critical fundamentals like lighting, composition, and
-    focus to capture exceptional photos. Get Started Crypto All you need to know
-    to get started investing in crypto. Go from beginner to advanced with this
-    54 hour course. Get Started Business A step-by-step playbook to help you
-    start, scale, and sustain your business without outside investment. Get
-    Started Get Started -->

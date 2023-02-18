@@ -16,6 +16,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 img,
 video,
@@ -39,7 +40,11 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
 /* mobile style  */
 
 body {
@@ -48,28 +53,31 @@ body {
   overflow-x: hidden;
 }
 
-/* main style */
+/* button  style */
 .btn {
   border: none;
-  padding: 1em 1.5em;
+
   color: var(--color-main);
 }
 .btn-header {
   background-color: var(--coloor-text);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   border-radius: 28px;
-  margin-top: 1.93rem;
+  padding: 1rem 2rem;
 }
 .btn-hero {
-  background: linear-gradient(#f02aa6, #ff6f48);
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   border-radius: 31.5px;
   padding: 0.93em 2.31em;
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
 /* mobile-first design */
+
 .container {
-  max-width: 378px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 1em 2em;
 }
@@ -84,44 +92,18 @@ body {
 }
 .info-hero {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  align-items: start;
 }
 .hero-title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 800;
   color: var(--coloor-text);
+  margin-top: 2.375rem;
 }
 .hero-lead {
   color: var(--color-text-lead);
   font-weight: 500;
-  font-size: 1.3rem;
-  max-width: 400px;
+  font-size: 1.6rem;
   margin: 33px 0;
-}
-/* for large phone */
-@media (min-width: 400px) {
-  .main {
-    background-color: red;
-  }
-}
-
-/* for tablet */
-@media (min-width: 768px) {
-  .main {
-    background-color: brown;
-  }
-}
-/* for small laptop */
-@media (min-width: 1024px) {
-  .main {
-    background-color: darkgoldenrod;
-  }
-}
-/* for normal desktop */
-@media (min-width: 1300px) {
-  .main {
-    background-color: yellowgreen;
-  }
 }
