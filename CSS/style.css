@@ -56,7 +56,7 @@ body {
 /* button  style */
 .btn {
   border: none;
-
+  cursor: pointer;
   color: var(--color-main);
 }
 .btn-header {
@@ -73,7 +73,24 @@ body {
   font-size: 1.7rem;
   font-weight: 700;
 }
+.btn-cta {
+  border: none;
+  background: none;
+  color: #f02aa6;
+  font-size: 1.7rem;
+  font-weight: 700;
+ 
+  padding-bottom: 2rem;
+  cursor: pointer;
 
+}
+.btn-footer {
+  background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  border-radius: 28px;
+  font-size: 1.7rem;
+  padding: 1.2rem 2.3rem;
+  font-weight: 700;
+}
 /* mobile-first design */
 
 .container {
@@ -85,6 +102,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .img-logo {
@@ -107,3 +125,65 @@ body {
   font-size: 1.6rem;
   margin: 33px 0;
 }
+
+/* cta section */
+.cta__hero {
+  /* margin: 0 16px 0 16px; */
+  max-width: 343px;
+  margin: 0 auto;
+}
+.cta__title-box {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 10px;
+}
+.cta__title {
+  color: var(--color-main);
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 32px;
+  max-width: 380px;
+  padding: 2.06rem 1.81rem 4rem 3rem;
+  margin-bottom: 4rem;
+}
+.cta__box {
+  /* background-color: palevioletred; */
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  /* padding: 2.06rem 1.81rem 2.375rem 3rem; */
+  border-radius: 10px;
+  padding-left: 3rem;
+  position: relative;
+  margin-bottom: 4rem;
+  /* padding: 2.06rem 1.81rem 2.375rem 3rem; */
+}
+.img-logo-box img {
+  position: absolute;
+
+  transform: translateY(-50%);
+}
+.cta__box-title {
+  color: #13183f;
+  font-weight: 800;
+  font-size: 20px;
+  padding-top: 5rem;
+}
+.cta__box-lead {
+  color: #83869a;
+  font-size: 1.5rem;
+  margin: 1.9rem 0;
+  max-width: 286px;
+}
+.cta__box:last-child{
+  margin-bottom: 10rem;
+}
+/* footer */
+/* .footer {
+  background-color: #13183f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 1.4rem;
+  
+}
+.logo-footer img {
+  height: 20px;
+} */
