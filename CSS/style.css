@@ -176,7 +176,7 @@ body {
   margin-bottom: 10rem;
 }
 /* footer */
-/* .footer {
+.footer {
   background-color: #13183f;
   display: flex;
   align-items: center;
@@ -186,4 +186,4 @@ body {
 }
 .logo-footer img {
   height: 20px;
-} */
+}
