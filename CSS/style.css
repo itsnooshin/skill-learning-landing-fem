@@ -79,10 +79,9 @@ body {
   color: #f02aa6;
   font-size: 1.7rem;
   font-weight: 700;
- 
+
   padding-bottom: 2rem;
   cursor: pointer;
-
 }
 .btn-footer {
   background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
@@ -127,6 +126,7 @@ body {
 }
 
 /* cta section */
+
 .cta__hero {
   /* margin: 0 16px 0 16px; */
   max-width: 343px;
@@ -145,15 +145,16 @@ body {
   padding: 2.06rem 1.81rem 4rem 3rem;
   margin-bottom: 4rem;
 }
+
 .cta__box {
   /* background-color: palevioletred; */
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
   /* padding: 2.06rem 1.81rem 2.375rem 3rem; */
   border-radius: 10px;
+  height: auto;
   padding-left: 3rem;
   position: relative;
   margin-bottom: 4rem;
-  /* padding: 2.06rem 1.81rem 2.375rem 3rem; */
 }
 .img-logo-box img {
   position: absolute;
@@ -172,8 +173,8 @@ body {
   margin: 1.9rem 0;
   max-width: 286px;
 }
-.cta__box:last-child{
-  margin-bottom: 10rem;
+.cta__box:last-child {
+  /* margin-bottom: 10rem; */
 }
 /* footer */
 .footer {
@@ -182,8 +183,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 3rem 1.4rem;
-  
 }
-.logo-footer img {
+/* .logo-footer img {
   height: 20px;
-}
+} */

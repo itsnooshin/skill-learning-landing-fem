@@ -3,7 +3,7 @@
 @media (min-width: 768px) {
   html {
     font-size: 56.25%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .container {
     max-width: 689px;
@@ -51,10 +51,59 @@
     top: 0;
     margin-top: 0;
     top: 0;
-    /* left: calc(50% - 50px); */
   }
   .hero {
     margin-top: 2rem;
+  }
+  .footer {
+    width: 100%;
+  }
+  .cta__conatiner {
+    margin-top: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 7rem;
+
+    width: 100%;
+  }
+
+  .cta__title {
+    padding-bottom: 10rem;
+    padding-top: 4.14rem;
+  }
+
+  .cta__hero {
+    max-width: 700px;
+  }
+  .cta__box {
+    max-width: 400px;
+    height: auto;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2.06rem 1.81rem 2.375rem 3rem;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .footer {
+    margin-top: 12rem;
+  }
+
+  .footer {
+    padding: 2rem 10rem;
+  }
+  .btn-cta-container {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+  .btn-cta {
+    align-self: flex-start;
   }
 }
 
@@ -75,6 +124,10 @@
   .img-hero img {
     top: -90px;
   }
+  .cta__conatiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 /* for  desktop */
 @media (min-width: 1300px) {
@@ -83,8 +136,5 @@
   }
   .container {
     max-width: 1110px;
-  }
-  body {
-    background-color: red;
   }
 }
