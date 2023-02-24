@@ -5,6 +5,9 @@
     font-size: 56.25%;
     overflow-x: hidden !important;
   }
+  body {
+    overflow-x: hidden !important;
+  }
   .container {
     max-width: 689px;
   }
@@ -37,20 +40,16 @@
     align-items: center;
     justify-content: center;
   }
-  .img-hero img {
+  .img-hero {
     position: relative;
-    width: 100%;
-    left: 55%;
-    /* transform: translate(-50%, -10%); */
+    top: -100%;
   }
 
-  .img-hero {
+  .image-hero {
     position: absolute;
     min-width: 695px;
     height: 700px;
-    top: 0;
-    margin-top: 0;
-    top: 0;
+    top: 50%;
   }
   .hero {
     margin-top: 2rem;
@@ -59,7 +58,7 @@
     width: 100%;
   }
   .cta__conatiner {
-    margin-top: 40rem;
+    margin-top: 20rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
@@ -94,7 +93,7 @@
   }
 
   .footer {
-    padding: 2rem 10rem;
+    padding: 3rem 10rem;
   }
   .btn-cta-container {
     display: flex;
@@ -104,71 +103,45 @@
   .btn-cta {
     align-self: flex-start;
   }
-  .img-logo-box img {
-    transform: translateY(-90%);
-  }
-
-  .btn-header:hover {
-    background-color: #666ca3;
-  }
-  .btn-hero:hover {
-    background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
-      ),
-      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
-  }
-  .btn-footer:hover {
-    background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
-      ),
-      linear-gradient(180deg, #fca8b8 -54.32%, #4c50fd -54.3%, #f02aa6 100%);
-  }
-  .btn-cta:hover {
-    color: #ffd3e1;
+  .img-hero img {
+    overflow-x: hidden;
   }
 }
 
 /* for big tablet */
 @media (min-width: 1024px) {
   html {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .container {
     max-width: 900px;
   }
-  .img-hero {
-    min-width: 899px;
-    height: 936px;
-    top: 0;
-    bottom: 50%;
-  }
-  .img-hero img {
-    top: -90px;
-  }
-  .cta__hero {
-    /* max-width: 700px; */
-
-    max-width: 1110px;
-  }
-  .btn {
-    cursor: pointer;
+  .image-hero {
+    left: 20%;
   }
   .cta__conatiner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30rem;
   }
-  
 }
+
 /* for  desktop */
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   html {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .container {
     max-width: 1110px;
+  }
+  .cta__conatiner {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-top: 40rem;
+  }
+  .cta__hero {
+    max-width: 1100px;
+  }
+  .image-hero {
+    min-width: 900px;
+    left: 10%;
   }
 }
